@@ -1,14 +1,15 @@
 *{
-    padding: 0%;
-    margin: 0%;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
 
-.logo {
-    display: flex;
-    justify-content: space-between;
+ul{
+    list-style: none;
+    
 }
 
-.menu {
-    display: flex;
+a {
+    text-decoration: none;
     justify-content: space-between;
 }
