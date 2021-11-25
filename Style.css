@@ -13,3 +13,9 @@ a {
     text-decoration: none;
     justify-content: space-between;
 }
+body{
+    background-image: url(./IMG/8658013d05ef389bf72997ca2796df4a.jpg);
+    background-repeat: no-repeat;
+    background-position: center center fixed;
+    background-size: cover;
+}
