@@ -31,7 +31,7 @@ header{
     background-image: url(./IMG/queijo-doce-abobora.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center center fixed; 
+    background-position: center center; 
     
 }
 
@@ -50,27 +50,63 @@ header ul li a:hover{
 }
 
     
-.flex {
+.container {
+    position:relative;
+    width: 1000px;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items:center;
-    margin: 45px;
+    flex-wrap: wrap;
 }
 
-.flex div {
-    border: 1px solid lightgoldenrodyellow;
-    max-width: 201px;
-    margin: 25px;
-    flex-basis: 100%;
-    background-color:red
+.container .card {
+   position: relative;
+   max-width: 450px;
+   background: #333;
+   margin: 10px;
+   padding: 15px;
+   display: flex;
     
 }
 
-.flex img {
-    max-width: 200px;
+.container .card .imgBx {
+    max-width: 150px;
+    flex: 0 0 150px;
 }
 
-p {
-       width: 200px;
+.container .card .imgBx  img{
+       max-width: 100%;
         
+}
+.container .card .content 
+{
+    margin-left: 20px;
+}
+    @media (max-width: 991px)
+ {
+    .container
+    {
+    flex-direction: column;
+    }
+}
+    @media (max-width: 768px)
+     {
+    .container
+    {
+    flex-direction: column;
+    }
+    .container .card
+    {
+    flex-direction: column;
+    max-width: 350px;
+    } 
+    .container .card .imgBx
+    {
+    max-width: 100%;
+    }
+    .container .card .content
+    {
+    margin: left 0px;
+    }
+
 }
